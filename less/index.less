@@ -57,3 +57,42 @@ html, body {
     height: 100%;
 }
 
+.container {
+	width: 880px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.top-content {
+	background: lightgray;
+	display: flex;
+	flex-direction: column;
+	
+
+	hr{
+		width: 100%;
+	}
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+
+	.summary {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	table tr {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
