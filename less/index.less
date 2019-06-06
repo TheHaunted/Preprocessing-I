@@ -57,37 +57,108 @@ html, body {
     height: 100%;
 }
 
+//my code below
+
+html {
+	font-size: 62.5%;
+}
+
 .container {
 	width: 880px;
 	margin: 0 auto;
 	border: 1px solid black;
 }
 
-.top-content {
-	background: lightgray;
-	display: flex;
-	flex-direction: column;
+nav{
+	display: inline-block;
+	margin: 20px 0;
 	
+	a {
+		margin-right: 20px;
+		text-decoration: none;
+		color: black;
+		font-size: 2rem;
+	}
+}
 
-	hr{
-		width: 100%;
+.top-container {
+	background: lightgray;
+	font-size: 1.5rem;
+
+	.top-content {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+
+		hr {
+			width: 100%;
+		}
+
+		img {
+			width: 300px;
+			height: 300px;
+		}
+
+		h1{
+			font-size: 3rem;
+		}
+
+		h4 {
+			font-size: 2rem;
+			padding-top: 5px;
+		}
+
+		button {
+			height: 40px;
+			width: 100px;
+			margin-top: 10px;
+		}
 	}
 }
 
 main {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 20px;
+
+	h3{
+		font-size: 2rem;
+	}
 
 	.summary {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
+		font-size: 1.3rem;
+		
+		p{
+			margin-top: 5px;
+		}
 	}
 
 	.list {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
+		font-size: 1.3rem;
+
+		ul{
+			margin-top: 5px;
+			display: flex;
+			flex-direction: column;
+
+			li{
+				padding: 10px;
+				border-bottom: 1px solid lightgray;
+
+			}
+
+			:first-child {
+				border-top: 1px solid lightgray;
+			}
+		}
+
+		
 	}
 
 	table tr {

@@ -134,32 +134,86 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
 .container {
   width: 880px;
   margin: 0 auto;
   border: 1px solid black;
 }
-.top-content {
+nav {
+  display: inline-block;
+  margin: 20px 0;
+}
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+.top-container {
   background: lightgray;
+  font-size: 1.5rem;
+}
+.top-container .top-content {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
-.top-content hr {
+.top-container .top-content hr {
   width: 100%;
+}
+.top-container .top-content img {
+  width: 300px;
+  height: 300px;
+}
+.top-container .top-content h1 {
+  font-size: 3rem;
+}
+.top-container .top-content h4 {
+  font-size: 2rem;
+  padding-top: 5px;
+}
+.top-container .top-content button {
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
 }
 main {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+}
+main h3 {
+  font-size: 2rem;
 }
 main .summary {
   display: flex;
   flex-direction: column;
   width: 50%;
+  font-size: 1.3rem;
+}
+main .summary p {
+  margin-top: 5px;
 }
 main .list {
   display: flex;
   flex-direction: column;
   width: 50%;
+  font-size: 1.3rem;
+}
+main .list ul {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+main .list ul li {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+main .list ul :first-child {
+  border-top: 1px solid lightgray;
 }
 main table tr {
   width: 100%;
